@@ -1,0 +1,41 @@
+* {
+    font-family: sans-serif;
+}
+
+.contenedor {
+    width: 900px;
+    margin: auto;
+}
+
+.cabecera {
+    background-color: navy;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tabla {
+    padding: 10px;
+}
+.tabla table {
+    width: 90%;
+    margin: auto;
+}
+.tabla table, .tabla td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tabla th {
+    background-color: steelblue;
+    color: white;
+    font-weight: bolder;
+}
+.contenido form {
+    margin-top: 10px;
+}
+
+.contenido form label {
+    width: 130px;
+    float: left;
+}
