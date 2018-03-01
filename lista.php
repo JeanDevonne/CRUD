@@ -1,11 +1,7 @@
 <?php
-
 include('conexion.php');
-
 $consulta = 'select * from usuarios';
-
 $resultado = mysqli_query($conexion,$consulta);
-
 $tabla =<<<FIN
 <table>
 <tr><th>Nombres</th><th>Apellido paterno</th><th>Apellido materno</th><th>Correo</th><th colspan="2">Accion</th></tr>

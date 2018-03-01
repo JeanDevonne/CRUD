@@ -1,12 +1,9 @@
 <?php
-
 $nlinea = !empty($_GET['id']) ? $_GET['id'] : 0;
 $linea='';
 //Si hay una linea que modificar "$nlinea", entonces.
 if($nlinea){
-
     include('conexion.php');
-
 	$registro = "SELECT * FROM usuarios WHERE id = $nlinea;";
 	$resultado = mysqli_query($conexion,$registro);
 	$linea = mysqli_fetch_row($resultado);
@@ -26,7 +23,6 @@ if($nlinea){
     <div class="cabecera">Actualización de datos</div>
     <div class="contenido">
     <form class="contact" action="actualizar.php" method='post'>
-
             <input type="hidden" name="nlinea" value="<?php echo $nlinea;?>">
             <label for="i1">Nombres</label>
             <input type="text" id="i1" name="c1" value="<?php echo $linea[1];?>">
@@ -41,7 +37,6 @@ if($nlinea){
             <input type="email" id="i4" name="c4" value="<?php echo $linea[4];?>">
             <br>
             <input class="boton" type="submit" value="actualizar">
-
     </form>
     </div>
     </div>
